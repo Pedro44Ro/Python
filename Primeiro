@@ -1,0 +1,32 @@
+continuar = "s"
+
+while continuar == "s":
+    print("Calculadora em Python")
+    print("escolha:")
+    print("1 para -")
+    print("2 para +")
+    print("3 para X")
+    print("4 para /")
+    tipo = int(input("Digite o numero da sua operação: "))
+    num1 = float(input("Digite o primeiro numero: "))
+    num2 = float(input("Digite o segundo numero: "))
+
+    if tipo == 1:
+        print("O resultado é: ")
+        print(num1 - num2)
+        continuar = input("Deseja fazer outra operação? s/n: ")
+    elif tipo == 2:
+        print("O resultado é: ")
+        print(num1 + num2)
+        continuar = input("Deseja fazer outra operação? s/n: ")
+    elif tipo == 3:
+        print("O resultado é: ")
+        print(num1 * num2)
+        continuar = input("Deseja fazer outra operação? s/n: ")
+    elif tipo == 4:
+        print("O resultado é: ")
+        print(num1 / num2)
+        continuar = input("Deseja fazer outra operação? s/n: ")
+    elif tipo != 1 and 2 and 3 and 4:
+        print("Operação invalida")
+        continuar = input("Deseja fazer outra operação? s/n: ")
